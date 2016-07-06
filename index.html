@@ -16,10 +16,10 @@
           <p id="hint-message"></p>
         </div>
       <div id="game-controls" class="game-controls">
-        <input type=text id="user-guess" placeholder="Enter a number 1 to 100"><br/>
+        <input type="number" max="100" min="1" id="user-guess" placeholder="Enter a number 1 to 100"><br/>
         <button id="guess-button">Guess</button>
-        <button id="clear-guess-button">Clear</button><br/>
-        <button id="reset-button">Reset Game</button>
+        <button id="clear-guess-button" disabled = "true">Clear</button><br/>
+        <button id="reset-button" disabled ="true">Reset Game</button>
       </div>
       <script src="script.js"></script>
   </body>
