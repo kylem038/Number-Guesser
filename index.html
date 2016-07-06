@@ -6,7 +6,19 @@
     <link rel="stylesheet" href="style.css" media="screen" title="Styles">
   </head>
   <body>
-    <h1>Guess a number!</h1>
-    <stript src="script.js"></script>
+    <h1>Welcome to Number Guesser!</h1>
+      <h2>Can you guess the number the computer is thinking of?</h2>
+        <div id="guess-display" class="guess-display">
+          <p>Your last guess was:</p>
+          <p id="last-guest" class="last-guess">(Number they guessed)</p>
+          <p id="hint-message">(That is too high/low)</p>
+        </div>
+      <form id="game-controls" class="game-controls">
+        <input type=text id="user-guess" placeholder="Enter a number 1 to 100"><br/>
+        <button id="guess-button">Guess</button>
+        <button id="clear-guess-button">Clear</button><br/>
+        <button id="reset-button">Reset Game</button>
+      </form>
+    <script src="script.js"/>
   </body>
 </html>
