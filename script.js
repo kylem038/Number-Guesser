@@ -14,8 +14,8 @@ guessButton.addEventListener('click', function(){
       hintMessage.innerText = "Sorry, that number is too high. Try again!"
     } else if (parseInt(userGuess.value) < computerChoice){
       hintMessage.innerText = "Sorry, that number is too low. Try again!"
-    } else (parseInt(userGuess.value) === computerChoice){
-    hintMessage.innerText = "Congrats! You guessed the number!"}
+    } else if (parseInt(userGuess.value) === computerChoice)
+    hintMessage.innerText = "Congrats! You guessed the number!"
 });
 
 
@@ -35,5 +35,15 @@ clearButton.addEventListener('click', function(){
 var computerChoice = getRandomNum();
 
 function getRandomNum(){
-  return Math.floor(Math.random() * 100) + 1;
+  return Math.floor(Math.random() * 3) + 1;
 }
+
+//resets game by re-doing the definition of computerChoice, which re-runs getRandomNum
+
+var resetButton = document.getElementById('reset-button');
+
+resetButton.addEventListener('click', function(){
+  recentGuessDisplay.innerText = "";
+  userGuess.value="";
+  computerChoice = getRandomNum();
+})
