@@ -19,9 +19,18 @@ function getRandomNum(min, max){
 generates new random number with the new params */
 function levelUp(min, max) {
   min = min-10;
-  max = max +10;
+  max = max + 10;
+
+  // function increaseRange(n) {
+  //   min = min - n;
+  //   max = max + n;
+  // }
+  // increaseRange(20)
   userMin.value = min;
   userMax.value = max;
+  // updateUserValues(min, max);
+
+
   computerChoice = getRandomNum(parseInt(min), parseInt(max));
   return computerChoice;
 }
@@ -29,6 +38,10 @@ function levelUp(min, max) {
 /* Submit button for min/max which will feed the RNG & guessButton */
 rangeSubmitButton.addEventListener('click', function() {
   if (parseInt(userMin.value) > parseInt(userMax.value)){
+    // updateText()
+    // function updateText(text) {
+    //   hintMessage.textContent = text
+    // }
     hintMessage.textContent = "Your minimum can't be higher than your maximum! Pick new parameters."
   }
   computerChoice = getRandomNum(parseInt(userMin.value), parseInt(userMax.value));
@@ -45,6 +58,7 @@ clearButton.addEventListener('click', function(){
   recentGuessDisplay.textContent = "";
   userGuess.value="";
   clearButton.disabled = true;
+  // clearFields();
 });
 
 /*resets game by re-defining computerChoice, clearing fields, and disables both buttons*/
