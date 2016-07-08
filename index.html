@@ -3,15 +3,16 @@
     <meta charset="utf-8">
     <title>Number Guesser</title>
     <link rel="stylesheet" href="normalize.css">
-    <!-- <link rel="stylesheet" href="style.css" media="screen" title="Styles"> -->
+    <link rel="stylesheet" href="style.css" media="screen" title="Styles">
+    <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
   </head>
   <body>
     <h1>Welcome to Number Guesser!</h1>
       <h2>Can you guess the number the computer is thinking of?</h2>
         <h3>The machine will choose a number between</h3>
-        <input type="number" id="user-min" placeholder="enter min value">
+        <input type="number" id="user-min" placeholder="Enter min value">
         <h3>and</h3>
-        <input type="number" id="user-max" placeholder="enter max value">
+        <input type="number" id="user-max" placeholder="Enter max value">
         <br>
         <button id="range-submit">Submit</button>
         <div id="guess-display" class="guess-display">
@@ -22,7 +23,7 @@
           <p id="hint-message"></p>
         </div>
       <div id="game-controls" class="game-controls">
-        <input type="number" max="100" min="1" id="user-guess" placeholder="Enter a number 1 to 100"> <br/>
+        <input type="number" max="100" min="1" id="user-guess" placeholder="Enter a number"><br>
 
         <button id="guess-button">Guess</button>
         <button id="clear-guess-button" disabled = "true">Clear</button><br/>

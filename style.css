@@ -1,1 +1,26 @@
+html body {
+  font-family: 'Suez One', serif;
+  background-color: #D4D4D4;
+  text-align: center;
+}
 
+#user-guess {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#range-submit {
+  margin-top: 10px;
+}
+
+#guess-button {
+  margin: 5px;
+}
+
+#clear-guess-button {
+  margin: 5px;
+}
+
+#reset-button {
+  margin: 5px;
+}
