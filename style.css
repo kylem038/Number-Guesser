@@ -13,6 +13,13 @@ html body {
   margin-top: 10px;
 }
 
+#last-guess {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin: auto;
+}
+
 #guess-button {
   margin: 5px;
 }
